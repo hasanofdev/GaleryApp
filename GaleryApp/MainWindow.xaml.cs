@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,9 +19,32 @@ namespace GaleryApp
 {
     public partial class MainWindow : Window
     {
+        List<Image> images;
         public MainWindow()
         {
             InitializeComponent();
+            images = new List<Image>();
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string fileName = "image";
+
+            int imageNumber = 0;
+            while (File.Exists(path + "fileName"))
+            {
+                if (int.TryParse(fileName[fileName.Length - 1].ToString(), out imageNumber))
+                    fileName += imageNumber.ToString();
+                else
+                    break;
+
+            }
+
+            Image image = new Image();
+            var stream = new MemoryStream();
+            image.SetBinding
+
         }
     }
 }

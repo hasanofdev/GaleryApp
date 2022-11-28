@@ -30,7 +30,7 @@
                 
                 <Separator/>
                 
-                <MenuItem Header="Save" InputGestureText="Ctrl+S">
+                <MenuItem Header="Save" InputGestureText="Ctrl+S" Click="SaveBtn_Click">
                     <MenuItem.Icon>
                         <Image Source="Resources/SaveFile.png" Stretch="UniformToFill"/>
                     </MenuItem.Icon>
@@ -43,9 +43,39 @@
                 </MenuItem>
             </MenuItem>
 
-            <MenuItem Header="Edit"></MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add File" InputGestureText="Ctrl+A">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/AddFile.Png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                
+                <MenuItem Header="Add Folder" InputGestureText="Ctrl+Shift+A">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/AddFolder.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
 
-            <MenuItem Header="View"></MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Tiles">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/TilesView.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Header="Small Icons">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/SmallIconsView.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                
+                <MenuItem Header="Details">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/DetailsView.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
 
             <MenuItem Header="About"></MenuItem>
         </Menu>
