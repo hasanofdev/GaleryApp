@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\AddFile.svg" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\NewFile.ico" />
+    <None Remove="Resources\NewFile.png" />
+    <None Remove="Resources\OpenFile.png" />
+    <None Remove="Resources\SaveAsFile.png" />
+    <None Remove="Resources\SaveFile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="Resources\NewFile.png" />
+    <Resource Include="Resources\OpenFile.png" />
+    <Resource Include="Resources\SaveAsFile.png" />
+    <Resource Include="Resources\SaveFile.png" />
+  </ItemGroup>
+
+</Project>
