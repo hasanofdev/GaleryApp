@@ -5,14 +5,18 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Photos\87-871719_png-wallpapers-sf-wallpaper-walpepar-png.png" />
+    <None Remove="Photos\istockphoto-1309119061-170667a.png" />
+    <None Remove="Photos\k0rILCL.png" />
+    <None Remove="Photos\wUn6JO1.png" />
     <None Remove="Resources\AddFile.png" />
     <None Remove="Resources\AddFile.svg" />
     <None Remove="Resources\AddFolder.png" />
     <None Remove="Resources\DetailsView.png" />
-    <None Remove="Resources\logo.png" />
     <None Remove="Resources\NewFile.ico" />
     <None Remove="Resources\NewFile.png" />
     <None Remove="Resources\OpenFile.png" />
@@ -23,6 +27,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Photos\87-871719_png-wallpapers-sf-wallpaper-walpepar-png.png" />
+    <Resource Include="Photos\istockphoto-1309119061-170667a.png" />
+    <Resource Include="Photos\k0rILCL.png" />
+    <Resource Include="Photos\wUn6JO1.png" />
     <Resource Include="Resources\AddFile.png" />
     <Resource Include="Resources\AddFolder.png" />
     <Resource Include="Resources\DetailsView.png" />
@@ -33,6 +46,13 @@
     <Resource Include="Resources\SaveFile.png" />
     <Resource Include="Resources\SmallIconsView.png" />
     <Resource Include="Resources\TilesView.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

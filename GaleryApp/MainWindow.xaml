@@ -10,7 +10,7 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="23*"></RowDefinition>
+            <RowDefinition Height="23*"/>
             <RowDefinition Height="411*"></RowDefinition>
         </Grid.RowDefinitions>
 
@@ -27,10 +27,10 @@
                         <Image Source="Resources/OpenFile.png" Stretch="UniformToFill"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                
+
                 <Separator/>
-                
-                <MenuItem Header="Save" InputGestureText="Ctrl+S" Click="SaveBtn_Click">
+
+                <MenuItem Header="Save" InputGestureText="Ctrl+S">
                     <MenuItem.Icon>
                         <Image Source="Resources/SaveFile.png" Stretch="UniformToFill"/>
                     </MenuItem.Icon>
@@ -49,7 +49,7 @@
                         <Image Source="Resources/AddFile.Png"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                
+
                 <MenuItem Header="Add Folder" InputGestureText="Ctrl+Shift+A">
                     <MenuItem.Icon>
                         <Image Source="Resources/AddFolder.png"/>
@@ -69,7 +69,7 @@
                         <Image Source="Resources/SmallIconsView.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                
+
                 <MenuItem Header="Details">
                     <MenuItem.Icon>
                         <Image Source="Resources/DetailsView.png"/>
@@ -79,5 +79,7 @@
 
             <MenuItem Header="About"></MenuItem>
         </Menu>
+
+        <Frame Grid.Row="1" Name="MainView" Source="/Pages/MainFrame.xaml"></Frame>
     </Grid>
 </Window>
