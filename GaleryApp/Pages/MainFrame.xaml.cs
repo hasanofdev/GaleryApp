@@ -126,13 +126,13 @@ namespace GaleryApp.Pages
         }
         private void lbx_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            //    if (lbx.SelectedItem is Image image)
-            //    {
-            //        PicturePage photoPage = new(image.Source, ImageSources);
+            if (lbx.SelectedItem is Image image)
+            {
+                ImageFrame photoPage = new(image.Source, ImageSources);
 
-            //        NavigationService.Navigate(photoPage);
+                NavigationService.Navigate(photoPage);
 
-            //    }
+            }
         }
         private void MenuItemViewLarge_Click(object sender, RoutedEventArgs e)
         {
