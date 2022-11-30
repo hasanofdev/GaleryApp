@@ -134,19 +134,19 @@ namespace GaleryApp.Pages
 
             }
         }
-        private void MenuItemViewLarge_Click(object sender, RoutedEventArgs e)
+        public void MenuItemViewLarge_Click(object sender, RoutedEventArgs e)
         {
             ColumnsCount = 1;
             RowsCount = ((uint)lbx.Items.Count);
         }
-        private void MenuItemViewMedium_Click(object sender, RoutedEventArgs e) => ColumnsCount = 3;
-        private void MenuItemViewSmall_Click(object sender, RoutedEventArgs e) => ColumnsCount = 8;
-        private void MenuItemFileNew(object sender, RoutedEventArgs e)
+        public void MenuItemViewMedium_Click(object sender, RoutedEventArgs e) => ColumnsCount = 3;
+        public void MenuItemViewSmall_Click(object sender, RoutedEventArgs e) => ColumnsCount = 8;
+        public void MenuItemFileNew(object sender, RoutedEventArgs e)
         {
             MainWindow mainView = new MainWindow();
             mainView.Show();
         }
-        private void OpenFile_Click(object sender, RoutedEventArgs e)
+        public void OpenFile_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "PNG|*.png|JPG|*.jpg; *.jpeg;|GIF|*.gif;|BMP|*.bmp;";

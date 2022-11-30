@@ -23,6 +23,7 @@ namespace GaleryApp
 {
     public partial class MainWindow : Window
     {
+        MainFrame main = new MainFrame();
         public MainWindow()
         {
             InitializeComponent();
@@ -65,6 +66,10 @@ namespace GaleryApp
             }
         }
 
-       
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to log out?", "Exit", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                this.Close();
+        }
     }
 }

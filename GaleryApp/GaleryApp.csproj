@@ -17,6 +17,7 @@
     <None Remove="Resources\AddFile.svg" />
     <None Remove="Resources\AddFolder.png" />
     <None Remove="Resources\DetailsView.png" />
+    <None Remove="Resources\Exit.png" />
     <None Remove="Resources\NewFile.ico" />
     <None Remove="Resources\NewFile.png" />
     <None Remove="Resources\OpenFile.png" />
@@ -39,6 +40,7 @@
     <Resource Include="Resources\AddFile.png" />
     <Resource Include="Resources\AddFolder.png" />
     <Resource Include="Resources\DetailsView.png" />
+    <Resource Include="Resources\Exit.png" />
     <Resource Include="Resources\logo.png" />
     <Resource Include="Resources\NewFile.png" />
     <Resource Include="Resources\OpenFile.png" />

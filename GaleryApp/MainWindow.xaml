@@ -41,6 +41,12 @@
                         <Image Source="Resources/SaveAsFile.png" Stretch="UniformToFill"/>
                     </MenuItem.Icon>
                 </MenuItem>
+                <Separator/>
+                <MenuItem Header="Exit" InputGestureText="Alt + F4" Click="Exit_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/Exit.png" Stretch="UniformToFill"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
 
             <MenuItem Header="Edit">
