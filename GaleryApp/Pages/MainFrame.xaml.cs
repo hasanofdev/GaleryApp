@@ -32,7 +32,6 @@ namespace GaleryApp.Pages
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         public List<ImageSource> ImageSources { get; set; }
         private uint _rows = 3;
-
         public uint RowsCount
         {
             get { return _rows; }
@@ -56,7 +55,7 @@ namespace GaleryApp.Pages
         public MainFrame()
         {
             InitializeComponent();
-            ImageSources = new();
+            ImageSources = MainWindow.ImageSources;
             String searchFolder = @"../../../Photos";
             var filters = new String[] { "jpg", "jpeg", "png", "gif", "tiff", "bmp", "svg" };
             var files = GetFilesFrom(searchFolder, filters, false);
@@ -73,7 +72,7 @@ namespace GaleryApp.Pages
                     MinWidth = 70,
                     Stretch = Stretch.Uniform
                 };
-                ImageSources.Add(image.Source);
+                MainWindow.ImageSources.Add(image.Source);
                 lbx.Items.Add(image);
             }
         }
@@ -120,7 +119,7 @@ namespace GaleryApp.Pages
                 };
 
                 lbx.Items.Add(image);
-                ImageSources.Add(image.Source);
+                MainWindow.ImageSources.Add(image.Source);
             }
 
         }
